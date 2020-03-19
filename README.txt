@@ -15,6 +15,5 @@ Day 3:
 
 
 Day 4:
-1. Excercise 2 functionalities are done.
-2. Excercise 3 started and also using restTemplate approach to finish the excercise.
+1. Excercise 2 functionalities are started mainly aggregated service.
 3. by the end of the day I will be reading more of the Documentation.
