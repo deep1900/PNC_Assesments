@@ -1,6 +1,6 @@
-package com.example.userapplication.model;
+package com.example.userapplication.test.model;
 
-import com.example.userapplication.Exception.AccountErrorException;
+import com.example.userapplication.test.Exception.AccountErrorException;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,6 +30,14 @@ public class User {
     private long account_number;
 
     public User() {
+    }
+
+    public User(long id, String first_name, String last_name, String address, long account_number) {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.address = address;
+        this.account_number = account_number;
     }
 
     public long getId() {

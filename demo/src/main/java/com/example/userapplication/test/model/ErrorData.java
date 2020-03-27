@@ -1,4 +1,4 @@
-package com.example.userapplication.model;
+package com.example.userapplication.test.model;
 
 public class ErrorData
 {

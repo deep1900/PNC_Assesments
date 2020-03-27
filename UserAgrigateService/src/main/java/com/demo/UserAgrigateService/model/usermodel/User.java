@@ -5,8 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "user")
+
 public class User {
     /*
     user attributes:
@@ -15,16 +14,11 @@ public class User {
     3. Address(It might have a different class)
     4. Acc Number
      */
-    @Id
-    @Column(name = "Id")
+
     private long id;
-    @Column(name = "FirstName")
     private String first_name;
-    @Column(name="LastName")
     private String last_name;
-    @Column(name="Address")
     private String address;
-    @Column(name = "Account_Number")
     private long account_number;
 
     public User() {

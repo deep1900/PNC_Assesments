@@ -5,30 +5,26 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "account")
+
 public class Account
 {
-    @Id
-    @Column
+
     private int id;
-    @Column
     private Boolean checking;
-    @Column
     private Boolean savings;
-    @Column
     private int checkingAmount;
-    @Column
+    private long account_number;
     private int savingAmount;
 
     public Account() {
     }
 
-    public Account(int id, Boolean checking, Boolean savings, int checkingAmount, int savingAmount) {
+    public Account(int id, Boolean checking, Boolean savings, int checkingAmount, long account_number, int savingAmount) {
         this.id = id;
         this.checking = checking;
         this.savings = savings;
         this.checkingAmount = checkingAmount;
+        this.account_number = account_number;
         this.savingAmount = savingAmount;
     }
 
@@ -64,6 +60,14 @@ public class Account
         this.checkingAmount = checkingAmount;
     }
 
+    public long getAccount_number() {
+        return account_number;
+    }
+
+    public void setAccount_number(long account_number) {
+        this.account_number = account_number;
+    }
+
     public int getSavingAmount() {
         return savingAmount;
     }
@@ -79,6 +83,7 @@ public class Account
                 ", checking=" + checking +
                 ", savings=" + savings +
                 ", checkingAmount=" + checkingAmount +
+                ", account_number=" + account_number +
                 ", savingAmount=" + savingAmount +
                 '}';
     }

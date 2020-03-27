@@ -1,7 +1,7 @@
-package com.example.userapplication.Exception;
+package com.example.userapplication.test.Exception;
 
-import com.example.userapplication.model.Data;
-import com.example.userapplication.model.ErrorData;
+import com.example.userapplication.test.model.Data;
+import com.example.userapplication.test.model.ErrorData;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

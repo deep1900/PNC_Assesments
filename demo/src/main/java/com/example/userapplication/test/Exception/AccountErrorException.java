@@ -1,4 +1,4 @@
-package com.example.userapplication.Exception;
+package com.example.userapplication.test.Exception;
 
 public class AccountErrorException extends Exception {
 

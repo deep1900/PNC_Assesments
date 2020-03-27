@@ -1,6 +1,4 @@
-package com.example.userapplication.model;
-
-import org.springframework.validation.Errors;
+package com.example.userapplication.test.model;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.example.userapplication.controller;
+package com.example.userapplication.test.controller;
 
 
-import com.example.userapplication.Exception.AccountErrorException;
-import com.example.userapplication.model.Data;
-import com.example.userapplication.service.Service;
+import com.example.userapplication.test.Exception.AccountErrorException;
+import com.example.userapplication.test.model.Data;
+import com.example.userapplication.test.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    Service service;
+    UserService service;
 
     @GetMapping("/getUsers")
     public ResponseEntity<Data> getUsers() throws AccountErrorException {

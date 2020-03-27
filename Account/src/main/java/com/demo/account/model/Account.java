@@ -17,6 +17,8 @@ public class Account
     @Column
     private Boolean checking;
     @Column
+    private long account_number;
+    @Column
     private Boolean savings;
     @Column
     private int checkingAmount;
@@ -26,12 +28,13 @@ public class Account
     public Account() {
     }
 
-    public Account(int id, Boolean checking, Boolean savings, int checkingAmount, int savingAmount) {
+    public Account(int id, Boolean checking, Boolean savings, int checkingAmount, int savingAmount, long account_number) {
         this.id = id;
         this.checking = checking;
         this.savings = savings;
         this.checkingAmount = checkingAmount;
         this.savingAmount = savingAmount;
+        this.account_number=account_number;
     }
 
     public int getId() {
@@ -74,11 +77,20 @@ public class Account
         this.savingAmount = savingAmount;
     }
 
+    public long getAccount_number() {
+        return account_number;
+    }
+
+    public void setAccount_number(long account_number) {
+        this.account_number = account_number;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
                 "id=" + id +
                 ", checking=" + checking +
+                ", account_number=" + account_number +
                 ", savings=" + savings +
                 ", checkingAmount=" + checkingAmount +
                 ", savingAmount=" + savingAmount +
